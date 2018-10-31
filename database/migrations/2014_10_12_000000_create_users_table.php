@@ -19,8 +19,6 @@ class CreateUsersTable extends Migration {
 			$table->string('password', 60);
 			$table->rememberToken();
 			$table->timestamps();
-			$table->unsigned('clientes');
-			$table->foreign('clientes','users_clientes')->reference('id')->on('cliente');
 		});
 	}
 
